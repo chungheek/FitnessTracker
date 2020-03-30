@@ -1,0 +1,21 @@
+<br>
+<form method="PUT" action="/" type="hidden">
+    <fieldset>
+        <legend>Update this entry</legend>
+        Exercise name:
+        <input type="text" name="exerciseName" id="exerciseName">
+        <br>
+        Reps:
+        <input type="text" name="reps" id="reps">
+        <br>
+        Weight:
+        <input type="text" name="weight" id="weight" value="{{this.weight}}">
+        <label for="unit" value="{{this.unit}}"></label>
+        <input type="radio" name="unit" value="lbs">lbs
+        <input type="radio" name="unit" value="kg">kg
+        <br>
+        Date completed:
+        <input type="date" name="dateCompleted" id="dateCompleted" value="{{this.date}}">
+    </fieldset>
+    <input type="submit" id="{{this.id}}" type="hidden">
+</form>

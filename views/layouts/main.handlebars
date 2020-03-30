@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Demo Page</title>
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        <script src="/js/script.js"></script>
+        <script src="/js/formScript.js"></script>
+    </head>
+    <body>
+            <form method="POST" action="/">
+                <fieldset>
+                    <legend>Create a new entry</legend>
+                    Exercise name:
+                    <input type="text" name="exerciseName" id="exerciseName">
+                    <br>
+                    Reps:
+                    <input type="text" name="reps" id="reps">
+                    <br>
+                    Weight:
+                    <input type="text" name="weight" id="weight">
+                    <label for="unit"></label>
+                    <input type="radio" name="unit" value="lbs">lbs
+                    <input type="radio" name="unit" value="kg">kg
+                    <br>
+                    Date completed:
+                    <input type="date" name="dateCompleted" id="dateCompleted">
+                </fieldset>
+                <input type="submit" id="createNew">
+            </form>
+            <div id="updateForm"></div>
+        {{{body}}}
+        {{update}}
+    </body>
+</html>
