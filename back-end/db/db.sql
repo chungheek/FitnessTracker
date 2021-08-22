@@ -1,0 +1,10 @@
+
+CREATE TABLE exercise (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) UNIQUE,
+  reps INT,
+  weight INT,
+  unit VARCHAR(255),
+  date DATETIME DEFAULT NOW(),
+  PRIMARY KEY (id)
+);
