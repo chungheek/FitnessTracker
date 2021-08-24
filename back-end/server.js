@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const { queryDB } = require('./db/dbcon.js');
-app.use(express.urlencoded());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 const port = 3000;
 
 app.get('/', async (req, res) => {
