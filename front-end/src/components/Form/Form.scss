@@ -1,0 +1,13 @@
+.App-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  label {
+    margin: 30px 0;
+
+    input {
+      margin: 0 0 0 7px;
+    }
+  }
+}
