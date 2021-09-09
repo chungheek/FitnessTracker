@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./Form.scss";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Form.scss';
 
 const Form = () => {
-  const [data, setData] = useState(null);
+  const [setData] = useState(null);
 
   const getData = () => {
     try {
-      axios.get("http://locallhost:3000").then((res) => {
+      axios.get('http://locallhost:3000').then((res) => {
         if (res.status === 200) {
           console.log(res.data);
           setData(res.data);
@@ -23,24 +23,24 @@ const Form = () => {
   }, [setData]);
 
   return (
-    <form className="App-form">
+    <form className='App-form'>
       <label>
         Name:
-        <input type="text" name="name" />
+        <input type='text' name='name' />
       </label>
       <label>
         Reps:
-        <input type="text" name="reps" />
+        <input type='text' name='reps' />
       </label>
       <label>
         Weight:
-        <input type="text" name="weight" />
+        <input type='text' name='weight' />
       </label>
       <label>
         Unit:
-        <input type="text" name="unit" />
+        <input type='text' name='unit' />
       </label>
-      <input type="submit" value="Submit" />
+      <input type='submit' value='Submit' />
     </form>
   );
 };
